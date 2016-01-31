@@ -1,0 +1,454 @@
+﻿
+<!DOCTYPE html>
+<!-- saved from url=(0051)file:///C:/Users/User/Desktop/webpage/webpage1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-874">
+	<style>
+	body{
+		margin:0;
+		background-color:gray;
+		font-family: 'Designil Font';
+		color:'black';
+
+   		overflow: hidden;
+
+	}
+
+	#header{
+		padding:10px;
+		height:100px;
+		background-color: gray;
+		color:black;
+	}
+
+	ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #804000;
+    border: 2px solid #BBB;
+	}
+
+	li {
+    float: left;
+    border-right:2px solid#BBB;
+	}
+
+
+	li a{
+
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 50px;
+    text-decoration: none;
+
+	}
+
+	li a:hover {
+    background-color: #555;
+    
+	}
+	input[type=textSearch] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('file:///C:/Users/User/Desktop/webpage/search.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+	}
+
+	h2{
+		margin-left: 1cm;
+	}
+
+
+
+
+section {
+  /* The width of your document, I suppose */
+  width:100%;
+  height:400px;
+  /*margin: 0 auto;
+  white-space:nowrap; 
+  
+  overflow: scroll;
+*/
+}
+.pic-container {
+ /* As large as it needs to be */
+  width: 100px;
+}​
+#main-menu .nav-bar { list-style:none; margin-top: 40px; }
+#main-menu .nav-bar li { display:inline; padding:0 10px; }
+
+
+ .nav-button-home a 
+ { 
+ 	/* logo home */
+ 	background:url("http://www.arvindguptatoys.com/images/home-logo.png") no-repeat 0px -2px transparent;
+ 	
+  }
+  
+  .nav-button-edit a 
+ { 
+ 	/* logo EDIT */
+ 	background:url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/SVG-edit_logo.svg/60px-SVG-edit_logo.svg.png") no-repeat 0px -2px transparent;
+ 	
+  }
+
+.nav-button-add a 
+ { 
+ 	/* logo ADD */
+ 	background:url("http://1.bp.blogspot.com/-6Fcq-Tqyv_c/U8VyvQAqKbI/AAAAAAAACGA/K2SptzS0NQc/s1600/img1File-Logo.png") no-repeat 0px -2px transparent;
+ 	margin-left:15px
+  }
+  #box{
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+float: right;
+height:50px;
+width:200px;
+margin: 10px;
+
+
+}
+#box-inner{
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+background-color: #8080ff; 
+height:40px;
+width:100px;
+margin: 10px;
+line-height: 10px;
+float: left;
+text-align: center;
+
+}
+#box-inner:hover, #box-inner:active {
+ 
+    background-color: #4d4dff;
+}
+#f{
+	margin-top: 30px;
+	
+	height: 80%;
+	width:20%;
+	float: left;
+}
+#m{
+	margin-top: 30px;
+	
+	height: 80%;
+	width:50%;
+	
+	float: left;
+
+
+}
+#b{
+	margin-top: -42px;
+	
+	height: 80%;
+	width:30%;
+	float: left;
+    
+}
+
+#edit-frome{
+	width: 100%;
+	height: 90%;
+	
+	line-height: 10px;
+	color: white;
+
+
+}
+#edit-frome-left{
+ float: left;
+ width: 60%;
+ height: 100%;
+ 
+}
+#edit-frome-right{
+float: left;
+width: 40%;
+height: 100%;
+
+	
+}
+	
+
+button {
+  border: solid 1px moz-linear-gradient;
+  color: #eee;
+  border-radius:5px;
+ -moz-border-radius:5px;
+  background: -moz-linear-gradient(top, #5E5E5E 0%, #474747 51%, #0a0e0a 51%, #0a0809 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5E5E5E), color-stop(51%,#474747), color-stop(51%,#0a0e0a), color-stop(100%,#0a0809));
+}
+button:hover ,button:active{
+  color: white;
+}
+ #TH{
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+background-color: red;
+height:50px;
+width:60px;
+margin: 10px;
+float: right;
+
+
+}
+#EN{
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
+background-color: blue;
+height:50px;
+width:60px;
+margin: 10px;
+float: right;
+
+
+}
+#TH:hover ,#TH:active{
+
+}
+#EN:hover ,#EN:active{
+
+}
+#listboxs{
+ margin: 10px;
+ float: right;
+
+}
+	</style>
+</head>
+
+<body><!--Header-->
+	<div id="header">
+	<h1 style="font-size:30px;margin-left:20px;">Food Order</h1>
+	<h2 style="font-size:25px;margin-left:40px;">Thammasat University</h2>
+	<!--Menu Bar-->
+</div>
+	<ul>
+	 <li  class="nav-button-add" ><a href="C:\Users\Ritthirong\Desktop\add-food.html">_Add</a></li>
+	  <li class="nav-button-edit"><a href="C:\Users\Ritthirong\Desktop\edit-food.html">Edit</a></li>
+	  <li class="nav-button-home"><a href="C:\Users\Ritthirong\Desktop\123.html">Home</a></li><!-- home page-->
+	  <li><a href="file:///C:/Users/User/Desktop/webpage/webpage1.html#main courses">main courses</a></li>
+	  <li><a href="file:///C:/Users/User/Desktop/webpage/webpage1.html#set food">set food</a></li>
+	  <li><a href="file:///C:/Users/User/Desktop/webpage/webpage1.html#noodle">noodle</a></li>
+	  <li><a href="file:///C:/Users/User/Desktop/webpage/webpage1.html#desert">desert</a></li>
+	  <form style="float:right;margin-top:0.2cm;margin-right:0.75cm;"><input type="textSearch" name="search" placeholder="Search......"></form>
+	</ul>
+
+	<!--Midle-->
+	<div stye="padding:15px;background-color:#99e699;height:100px;">
+		<ul style="background-color:#d9b38c;">
+			<li style="border-right:none;float:left;";><h2>Edit Foods :</h2></li>
+		
+			<div id="box">
+			 <img src="http://simpleacademy.in/images/no_user.png" width="60px" height="60px" style="float:right;">
+			 <div id="box-inner">
+			 	<p style="color:white">HI~ADMIN</p>
+
+			 </div>	
+			</div>
+
+			</ul>
+
+		</div>	
+		<section>
+			<div id="f">
+				<div id="listboxs">
+
+						<select size="20" name="selectionField" multiple="yes" > 
+							    <option value="Hamberker" >Han\mberker  </option>
+  								<option value="reake_fast" >breake fast  </option>
+  								<option value="Tomyamkung" >Tomyamkung </option>
+  								<option value="LardHna" >Lard Hna </option>
+  								<option value="reake_fast" >breake fast  </option>
+  								<option value="Tomyamkung" >Tomyamkung </option>
+  								<option value="LardHna" >Lard Hna </option>
+  								<option value="reake_fast" >breake fast  </option>
+  								<option value="Tomyamkung" >Tomyamkung </option>
+  								<option value="LardHna" >Lard Hna </option>
+  								<option value="reake_fast" >breake fast  </option>
+  								<option value="Tomyamkung" >Tomyamkung </option>
+  								<option value="LardHna" >Lard Hna </option>
+  								<option value="reake_fast" >breake fast  </option>
+  								<option value="Tomyamkung" >Tomyamkung </option>
+  								<option value="LardHna" >Lard Hna </option>
+  								<option value="reake_fast" >breake fast  </option>
+  								<option value="Tomyamkung" >Tomyamkung </option>
+  								<option value="LardHna" >Lard Hna </option>
+  								<option value="reake_fast" >breake fast  </option>
+  								<option value="Tomyamkung" >Tomyamkung </option>
+  								<option value="LardHna" >Lard Hna </option>
+  								<option value="reake_fast" >breake fast  </option>
+  								<option value="Tomyamkung" >Tomyamkung </option>
+  								<option value="LardHna" >Lard Hna </option>
+  								<option value="reake_fast" >breake fast  </option>
+  								<option value="Tomyamkung" >Tomyamkung </option>
+  								<option value="LardHna" >Lard Hna </option>
+  								<option value="reake_fast" >breake fast  </option>
+  								<option value="Tomyamkung" >Tomyamkung </option>
+  								<option value="LardHna" >Lard Hna </option>
+  								<option value="reake_fast" >breake fast  </option>
+  								<option value="Tomyamkung" >Tomyamkung </option>
+  								<option value="LardHna" >Lard Hna </option>
+  								<option value="reake_fast" >breake fast  </option>
+  								<option value="Tomyamkung" >Tomyamkung </option>
+  								<option value="LardHna" >Lard Hna </option>
+  								<option value="reake_fast" >breake fast  </option>
+  								<option value="Tomyamkung" >Tomyamkung </option>
+  								<option value="LardHna" >Lard Hna </option>
+  								<option value="reake_fast" >breake fast  </option>
+  								<option value="Tomyamkung" >Tomyamkung </option>
+  								<option value="LardHna" >Lard Hna </option>
+  								<option value="reake_fast" >breake fast  </option>
+  								<option value="Tomyamkung" >Tomyamkung </option>
+  								<option value="LardHna" >Lard Hna </option>
+  								<option value="reake_fast" >breake fast  </option>
+  								<option value="Tomyamkung" >Tomyamkung </option>
+  								<option value="LardHna" >Lard Hna </option>
+						</select>
+					</div>
+			</div>
+			<div id="m">
+				<div id="edit-frome">
+
+					<div id="edit-frome-left">
+
+						<center>
+						<img src="http://thaibigplaza.com/img/cf4/911/cf4911738124a6d7cc246c5c14bc7c9c_5.jpg" width="70%" height="70%">
+						
+						<form action="upload-script-url" method="post" enctype="multipart/form-data">
+							<br><br>
+							
+    							<input type="file" name="file">
+								</form>
+							</center>
+						
+						
+						
+					</div>
+					<div id="edit-frome-right">
+						<h2 >Name:<input type="text" name="name"></h2>
+						<br>
+						<h2 >Type:
+									<select name="type">
+    									<option value="maincouse">maincouse</option>
+   										<option value="set_food">set food</option>
+    									<option value="noodle">noodle</option>
+    									<option value="desert">desert</option>
+  									</select>
+  						</h2>
+  						<br>
+  						<h2 >Price:<input type="number" name="price"></h2><br>
+  						<h2 >Describe:
+  						<textarea rows="6" cols="30" name="discribtion" style="float:right; margin:10px;">
+							</textarea>
+
+						</h2>
+					</div>
+
+				</div>
+			</div>
+			<div id="b">
+				<center>
+					<br><br><br>
+					<br><br><br>
+					<br><br><br>
+					<button type="button" onclick="alert('Hello world!')">SAVE</button>
+					<br><br><br>
+					<button type="button" onclick="alert('Hello world!')">SUBMIT</button>
+					<br><br><br>
+					<button type="button" onclick="alert('Hello world!')">DELETE</button>
+
+				</center>
+				<br><br><br><br><br>
+				<div id="TH">
+					<img src="http://www.9ddn.com/picture/doucment/files/8183943351e87fbf.jpg" width="100%" height="100%">
+				</div>
+				<div id="EN">
+					<img src="http://pics.unigang.com/news/31.jpg" width="100%" height="100%">
+				</div>
+			</div>
+
+
+			<!--
+  			<div class="pic-container">
+    			<div class="pic-row">
+      				<img src="C:\Users\Ritthirong\Documents\GitHub\WAPbeginer\webpage\webpage1_files\test.jpg" width="350px" height="250px">
+      				<img src="C:\Users\Ritthirong\Documents\GitHub\WAPbeginer\webpage\webpage1_files\test.jpg" width="350px" height="250px">
+      				<img src="C:\Users\Ritthirong\Documents\GitHub\WAPbeginer\webpage\webpage1_files\test.jpg" width="350px" height="250px">
+     				<img src="C:\Users\Ritthirong\Documents\GitHub\WAPbeginer\webpage\webpage1_files\test.jpg" width="350px" height="250px">
+      				<img src="C:\Users\Ritthirong\Documents\GitHub\WAPbeginer\webpage\webpage1_files\test.jpg" width="350px" height="250px">
+      				<img src="C:\Users\Ritthirong\Documents\GitHub\WAPbeginer\webpage\webpage1_files\test.jpg" width="350px" height="250px">
+    			</div>
+  			</div>
+  		-->
+		</section>
+	</div>
+
+	<div style="padding:1px;background-color:#9494b7;height:170px; text-align:center;">
+		<h3>Contact : Matus Thumparnichsakul tel:0869885017 email:legkae@outlook.com <br> Thankyou for visiting</h3>
+
+
+	</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
+\ No newline at end of file
